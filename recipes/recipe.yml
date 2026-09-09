@@ -12,16 +12,19 @@ image-version: latest # You can pin to a specific version of Fedora as well
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: script
-    snippets:
-      - mkdir /var/nix /nix
-      - echo "/var/nix /nix none bind,nobootwait 0 0" >> /etc/fstab
-      - curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm --init none
-
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: script
+    snippets:
+      - |
+        set -eux
+        mkdir -p /var/nix /nix /etc/systemd/system/local-fs.target.wants
+        mount --bind /var/nix /nix
+        ln -sf ../nix.mount /etc/systemd/system/local-fs.target.wants/nix.mount
+        curl -fsSL https://install.determinate.systems/nix | sh -s -- install linux --no-confirm --init none
 
   - type: dnf
     install:
