@@ -17,15 +17,6 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: script
-    snippets:
-      - |
-        set -eux
-        mkdir -p /var/nix /nix /etc/systemd/system/local-fs.target.wants
-        mount --bind /var/nix /nix
-        ln -sf ../nix.mount /etc/systemd/system/local-fs.target.wants/nix.mount
-        curl -fsSL https://install.determinate.systems/nix | sh -s -- install linux --no-confirm --init none
-
   - type: dnf
     install:
       packages:
