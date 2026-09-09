@@ -16,7 +16,7 @@ modules:
     snippets:
       - mkdir /var/nix /nix
       - echo "/var/nix /nix none bind,nobootwait 0 0" >> /etc/fstab
-      - curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm
+      - curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm --init none
 
   - type: files
     files:
