@@ -4,11 +4,8 @@
 type: dnf
 repos:
   copr:
-    - hazel-bunny/ricing
     - scottames/ghostty
 install:
   packages:
-    - firefox
     - ghostty
     - kvantum
-    - kwin-effects-forceblur
