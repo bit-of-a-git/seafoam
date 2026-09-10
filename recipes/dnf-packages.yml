@@ -5,10 +5,12 @@ type: dnf
 repos:
   files:
     - https://packages.microsoft.com/yumrepos/vscode
+    - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
   copr:
     - scottames/ghostty
 install:
   packages:
     - code
     - ghostty
+    - klassy
     - kvantum
