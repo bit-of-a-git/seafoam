@@ -6,13 +6,13 @@ name: seafoam
 description: An experimental atomic Linux distro.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/aurora-dx
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: system-files.yml
+  # - from-file: system-files.yml
   - from-file: dnf-packages.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -3,11 +3,8 @@
 
 type: dnf
 repos:
-  files:
-    - https://packages.microsoft.com/yumrepos/vscode/config.repo
   copr:
     - scottames/ghostty
 install:
   packages:
-    - code
     - ghostty
