@@ -3,9 +3,12 @@
 
 type: dnf
 repos:
+  files:
+    - https://packages.microsoft.com/yumrepos/vscode
   copr:
     - scottames/ghostty
 install:
   packages:
+    - code
     - ghostty
     - kvantum
