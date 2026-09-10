@@ -2,6 +2,8 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 
 type: default-flatpaks
-system:
-  remove:
+configurations:
+  - notify: false
+    scope: system
+    remove:
     - org.mozilla.firefox
