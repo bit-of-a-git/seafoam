@@ -7,4 +7,5 @@ repos:
     - scottames/ghostty
 install:
   packages:
+    - firefox
     - ghostty
