@@ -1,8 +1,13 @@
 # seafoam &nbsp; [![bluebuild build badge](https://github.com/bit-of-a-git/seafoam/actions/workflows/build.yml/badge.svg)](https://github.com/bit-of-a-git/seafoam/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Seafoam is an experimental Linux distro which uses BlueBuild to create a custom image based on Universal Blue.
 
-After setup, it is recommended you update this README to describe your custom image.
+## Why
+
+I tried out several distros before landing on Aurora, a general-purpose uBlue distro. I can do almost everything I want with the tools provided in Aurora, but occasionally encounter things I cannot do - or at least would require a lot of time investigating, which I don't always have. I currently intend to use Seafoam to experiment with things like:
+- Nix and Nix Home Manager
+- KDE extensions
+- Packages that are not easily available through Flatpaks, Brew, or Distrobox
 
 ## Installation
 
