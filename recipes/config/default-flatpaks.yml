@@ -4,6 +4,19 @@
 type: default-flatpaks
 configurations:
   - notify: false
-    scope: system
+    scope: user
+    install:
+      - com.calibre_ebook.calibre
+      - me.iepure.devtoolbox
+      - org.freefilesync.FreeFileSync
+      - com.heroicgameslauncher.hgl
+      - me.timschneeberger.jdsp4linux
+      - org.keepassxc.KeePassXC
+      - org.nicotine_plus.Nicotine
+      - md.obsidian.Obsidian
+      - org.onlyoffice.desktopeditors
+      - org.qbittorrent.qBittorrent
+      - org.videolan.VLC
     remove:
-    - org.mozilla.firefox
+      - org.mozilla.firefox
+      - org.kde.haruna
