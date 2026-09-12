@@ -13,8 +13,9 @@ image-version: latest # You can pin to a specific version of Fedora as well
 # you can include multiple instances of the same module
 modules:
   # - from-file: system-files.yml
-  - from-file: config/dnf-packages.yml
+  - from-file: config/change-os-release.yml
   - from-file: config/default-flatpaks.yml
+  - from-file: config/dnf-packages.yml
   - from-file: config/chezmoi-setup.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
