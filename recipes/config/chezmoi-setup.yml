@@ -5,5 +5,6 @@ type: chezmoi
 repository: https://github.com/bit-of-a-git/dotfiles
 branch: main
 file-conflict-policy: skip
-all-users: false
+all-users: true
+disable-init: false
 disable-update: true
