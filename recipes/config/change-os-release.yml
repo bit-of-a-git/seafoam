@@ -1,0 +1,8 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: os-release
+properties:
+  ID: seafoam
+  NAME: Seafoam
+  PRETTY_NAME: Seafoam Image

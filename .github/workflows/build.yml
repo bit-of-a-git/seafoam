@@ -7,6 +7,11 @@ on:
   pull_request:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
+  push:
+    branches:
+      - main
+    paths-ignore: # don't rebuild if only documentation has changed
+      - "**.md"
   workflow_dispatch: # allow manually triggering builds
 concurrency:
   # only run one build at a time
