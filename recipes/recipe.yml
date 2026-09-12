@@ -18,4 +18,12 @@ modules:
   - from-file: config/dnf-packages.yml
   - from-file: config/chezmoi-setup.yml
 
+  - type: script
+    snippets:
+      - git clone https://github.com/rvaiya/keyd
+      - cd keyd
+      - make && sudo make install
+      - sudo systemctl enable --now keyd
+      - /bin/bash -c "$(wget -qO- https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh || curl -fsSL https://raw.githubusercontent.com/rbreaves/kinto/HEAD/install/linux.sh)"
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
