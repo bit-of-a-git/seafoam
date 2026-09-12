@@ -15,5 +15,6 @@ modules:
   # - from-file: system-files.yml
   - from-file: config/dnf-packages.yml
   - from-file: config/default-flatpaks.yml
+  - from-file: config/chezmoi-setup.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

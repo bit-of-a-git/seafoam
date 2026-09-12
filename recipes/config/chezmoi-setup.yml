@@ -1,0 +1,9 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: chezmoi
+repository: https://github.com/bit-of-a-git/dotfiles
+branch: main
+file-conflict-policy: skip
+all-users: false
+disable-update: true
