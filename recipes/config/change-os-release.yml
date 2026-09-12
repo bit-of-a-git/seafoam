@@ -3,6 +3,4 @@
 
 type: os-release
 properties:
-  ID: seafoam
   NAME: Seafoam
-  PRETTY_NAME: Seafoam Image
