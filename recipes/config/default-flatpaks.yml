@@ -3,7 +3,7 @@
 
 type: default-flatpaks
 configurations:
-  - notify: false
+  - notify: true
     scope: user
     install:
       - com.calibre_ebook.calibre
@@ -17,6 +17,8 @@ configurations:
       - org.onlyoffice.desktopeditors
       - org.qbittorrent.qBittorrent
       - org.videolan.VLC
+  - notify: false
+    scope: system
     remove:
       - org.mozilla.firefox
       - org.kde.haruna
