@@ -17,8 +17,3 @@ configurations:
       - org.onlyoffice.desktopeditors
       - org.qbittorrent.qBittorrent
       - org.videolan.VLC
-  - notify: false
-    scope: system
-    remove:
-      - org.mozilla.firefox
-      - org.kde.haruna
