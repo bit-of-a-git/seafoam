@@ -4,7 +4,7 @@
 type: default-flatpaks
 configurations:
   - notify: true
-    scope: user
+    scope: system
     install:
       - com.calibre_ebook.calibre
       - me.iepure.devtoolbox
